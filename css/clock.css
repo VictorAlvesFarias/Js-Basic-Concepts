@@ -1,0 +1,37 @@
+.clock_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    height: 100px;
+
+}
+
+.clock_title h1 {
+    font-size: 15pt;
+
+}
+
+.clock {
+    background-color: yellow;
+    width: 25%;
+    height: 200px;
+    border: solid black 1px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25pt;
+}
+
+
+.clock_values {
+    width: 100%;
+    display: flex;
+}
+
+@media(max-width:1260px) {
+  
+}

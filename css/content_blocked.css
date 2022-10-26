@@ -1,0 +1,105 @@
+.swith_and_get_time_setup {
+    width: 50%;
+    min-width: 200px;
+    min-height: 500px;
+    background-color: rgb(12, 12, 12);
+    margin: 1.5% 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5;
+}
+
+.swith_and_get_time {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+
+}
+
+#swith_and_get_time_content_identifier{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+#unlock_content_identifier {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+    height: 0px;
+}
+
+#unlock_content_identifier img {
+    width: 30%;
+}
+
+#unlock_content_identifier p {
+    width: 50%;
+}
+
+.padlock_bottom {
+    width: 100px ;
+    height: 100px;
+    background-color: yellow;
+    transition: 0.5s;
+    margin-bottom: 30px;
+}
+
+#status_day_identifier {
+    transition: 0.5;
+}
+
+.padlock_up {
+    background-color: rgb(12, 12, 12);
+    border-top: 10px solid yellow; 
+    border-left: 10px solid yellow; 
+    border-right: 10px solid yellow; 
+    width: 60px;
+    height:55px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.swith_and_get_time_info {
+    width: 50%;
+}
+
+#img_code_identifier {
+    display: none;
+}
+
+#continue_menssage_identifier {
+    visibility: hidden;
+    transition: 1s;
+}
+
+.swith_and_get_time_verify_identifier {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(151, 151, 150);
+}
+
+
+.swith_and_get_time_verify_identifier:hover {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: yellow;
+    text-shadow: yellow 0 0 10px;
+}
+
+@media(max-width:1260px) {
+  
+}

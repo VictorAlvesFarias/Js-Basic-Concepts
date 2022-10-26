@@ -1,0 +1,14 @@
+@media(max-width:1260px) {
+    .button_class  {
+        width: 200px;
+        height: 90px;
+        background-color: rgb(9, 9, 9);
+        color: white;
+        margin: 20px;
+    }
+
+    .main{
+        width: 99%;
+    }
+
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <link id="style_site"  rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icone_java_script.png" type="image/x-icon">
+</head>
+<body style="transition: 1s;">
+    <header>
+        <div class="header_struct_class" id="header_identfier" style="transition: 0.3s;" >
+            <h1 style="transition: 0.4s;" class="title" onmouseenter="open_title_animation();" onmouseout="close_title_animation();" id="title_identifier">Js</h1>                
+            <div class="header_container">
+                <div class="info_site"  >
+                    <p class="info_site_hovering" onmouseenter="open_info_site();" onmouseout="close_info_site();" >?</p>
+                    <div id="info_site_paragraph_container_identifier" class="info_site_paragraph_container">
+                        <div class="decorations"  style="transition: 4s;" id="decorations_identifier">
+                            <div class="triangle" ></div>
+                            <p>Esse se trata apenas de um site para aprendizagem de scripts</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="responsive_navbar_button" id="navbar_identifier" onclick="responsive_navbar()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
+        </div>
+        <nav id="responsive_navbar_identifier" class="responsive_navbar_closed" style="transition: 0.4s;">   
+            <a href="#java_script_basic">Basic Js</a>
+            <a href="#conditions_if_else_and_switch">If If, Else and Switch </a>
+            <a href="#get_time">Get Time</a>
+            <a href="#while_and_for">While And For</a>
+            <a href="">Outros</a>
+        </nav>
+        <nav class="navbar">   
+            <a href="#java_script_basic">Basic Js</a>
+            <a href="#conditions_if_else_and_switch">If, Else and Switch</a>
+            <a href="#get_time">Get Time</a>
+            <a href="#while_and_for">While And For</a>
+            <a href="">Outros</a>
+        </nav>
+    </header>
+    <!-------------------->
+    <main class="main_div_site">
+    <section  id="java_script_basic">
+        <div class="basic_js_title">
+            <h2>Java Script Básico</h2>
+        </div>
+        <div class="java_script_basic_projects">
+            <div style="transition: 0.5s;" class="interactive_buttons">
+                <div class="rowb">
+                    <div class="button_class">
+                            <button onclick="clickbutton();">
+                                <p>Faça contas de Adição pelo Prompt do Google</p>
+                            </wbutton>
+                    </div>
+                    <div id="button1" class="button_class">
+                            <button class="button_1_5" onclick="clickbutton1();">
+                                <p>Mude O título Para Branco</p>
+                            </button>
+                            <button class="button_1_5" onclick="clickbutton1_5();">
+                                <p>Volte para o título original</p>
+                            </button>
+                    </div>
+                </div>
+                <div class="rowb">
+                    <div class="button_class">
+                            <button onClick="clickbutton2();">
+                                <p>Confirme Sua idade pelo Prompt </p>
+                            </button>
+                    </div>
+                    <div id="button1" class="button_class">
+                            <button class="button_1_5" onclick="clickbutton3_5();">
+                                <p>Volte para o estilo original</p>
+                            </button>
+                            <button class="button_1_5" onclick="clickbutton3();">
+                                <p>Veja o site sem nenhum estilo</p>
+                            </button>
+                    </div>
+                </div>
+            </div>
+            <div id="calculator_identfier" class="calculator">
+                <div class="calculator_setup">
+                    <div class="result_calculator_container">
+                        <p id="ocult_result_calculator"></p>
+                        <p id="result_calculator"></p>
+                    </div>
+                    <div class="calculator_row">
+                        <button class="button_calculator" onclick="clear('')">C</button>
+                        <button class="button_calculator" onclick="insert_simbols('*','X')">X</button>
+                        <button class="button_calculator" onclick="insert('.')">.</button>
+                    </div>
+                    <div class="calculator_row">
+                        <button class="button_calculator" onclick="insert_simbols('/','%')">÷</button>
+                        <button class="button_calculator" onclick="insert('-')">-</button>
+                        <button class="button_calculator" onclick="insert('+')">+</button>
+                    </div>
+                    <div class="calculator_row">
+                        <button class="button_calculator" onclick="insert('7')">7</button>
+                        <button class="button_calculator" onclick="insert('8')">8</button>
+                        <button class="button_calculator" onclick="insert('9')">9</button>
+                    </div>
+                    <div class="calculator_row">
+                        <button class="button_calculator" onclick="insert('4')">4</button>
+                        <button class="button_calculator" onclick="insert('5')">5</button>
+                        <button class="button_calculator" onclick="insert('6')">6</button>
+                    </div>
+                    <div class="calculator_row">
+                        <button class="button_calculator" onclick="insert('1')">1</button>
+                        <button class="button_calculator" onclick="insert('2')">2</button>
+                        <button class="button_calculator" onclick="insert('3')">3</button>
+                    </div>
+                    <div class="calculator_row">
+                        <button class="button_calculator" onclick="insert('0')">0</button>
+                        <button class="button_calculator_equal"  onclick="equal()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="conditions_if_else_and_switch">
+            <div class="conditions_if_else_and_switch_title">
+                <h2>If Else And Switch</h2>
+            </div>
+            <div class="yellow_border" > 
+                <div class="animation">
+                    <div id="animated_square_identifier_with_shadow">
+                    </div>
+                </div>
+                <div class="animation">
+                    <div id="animated_square_identifier_with_border_radius"></div>
+                </div>
+                <div class="animation">
+                    <div class="eye_triangle">
+                        <div id='eye_identifier'>
+                            <div class="pupil"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="yellow_border">
+                <div class="age_test" >
+                    <div>
+                        <p>Coloque sua idade</p>
+                    </div>
+                    <input type="text" id="age_test_input_indentifier">
+                    <button class="age_test_verifier" onclick="verify_age()">Aperte</button>                    
+                    <div class="age_test_result">
+                        <p id="age_test_result_identifier"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="get_time">
+            <div class="get_time_title">
+                <h2>Get Time</h2>
+            </div>
+            <div class="yellow_border">
+                <div class="clock_title" >
+                    <h2>Relógio do Juízo Final</h2>
+                </div>
+                <div class="clock_values">
+                    <div class="clock" id="hours_identifier">
+            
+                    </div>
+                    <div class="clock" id="minutes_identifier">
+            
+                    </div>
+            
+                    <div class="clock" id="seconds_identifier">
+            
+                    </div>
+                    <div class="clock" id="mini_seconds_identifier">
+            
+                    </div>
+                </div>
+            </div>
+            <div class="yellow_border">
+                <div class="swith_and_get_time">
+                    <div class="swith_and_get_time_setup">
+                        <h3>Switch + Get Time</h3>
+                        <div id="swith_and_get_time_content_identifier">
+                            <div class="swith_and_get_time_info">
+                                <p> Este conteúdo só é liberado e visível em todas sextas e terças feiras</p>
+                            </div>
+                            <div class="padlock_up">
+                            </div>
+                            <div class="padlock_bottom">
+                            </div>
+                            <button class="swith_and_get_time_verify_identifier" onclick="swith_and_get_time_verify()">
+                                Clique Aqui
+                            </button>  
+                        </div>
+                        <p id="status_day_identifier"></p>
+                        <div id="continue_menssage_identifier">
+                            <p>Pode seguir em frente</p>
+                        </div>
+                        <div id='unlock_content_identifier'>
+                            <img src="img/Iluizza.png" id="pizza_img_identifier" alt="">
+                            <p>Parabéns, você acabou de Adquirir a IlumiPizza, Ela te a habilidade de Absolutamente Nada, Mas já que você esperou até aqui, coma ela. </p>
+                            <button class="eat_button_identifier" onclick="eat_button()">
+                                <p>Coma</p>
+                                <p id="img_code_identifier">imagem1</p>
+                            </button>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="while_and_for">
+            <div class="while_and_for_title">
+                <h2>While and For</h2>
+            </div>
+            <div class="yellow_border"   > 
+                <div class="while_repeater">
+                    <div class="while_repeater_setup">
+                        <div class="generetor_settings">
+                            <input placeholder="Your Text" id="while_repeater_string_identifier" type="text">
+                            <input placeholder="Quantity" id="while_repeater_value_identifier" type="text">
+                        </div>
+                        <div class="generetor_settings">
+                            <button onclick="repeater()" id="while_repeater_submit_identifier">Press
+                            </button>
+                        </div>
+                        <div id="while_repeater_loading_identifier">
+                        </div>     
+                    </div>
+                    <div class="result_generator" >
+                        <p id="result_generator_paragraph_identifier">
+                        </p>
+                    </div>
+                </div>     
+            </div>
+            <div class="yellow_border">
+                <div class="monster_of_the_window">
+                    <div class="window">
+                        <div class="window_flap">
+                        </div>
+                        <div id="monster">
+                            <div class="monster_head">
+                                <div class="monster_head_horns_pair">
+                                    <div class="monster_head_horn"></div>
+                                    <div class="monster_head_horn"></div>
+                                </div>
+                                <div class="monster_head_eyes_pair">
+                                    <div class="monster_head_eyes"></div>
+                                    <div class="monster_head_eyes"></div>
+                                </div>
+                            </div>
+                            <div class="monster_body">
+                                <div class="monster_body_left">
+                                    <div class="monster_body_left_shoulder"></div>
+                                    <div class="monster_body_left_arm"></div>
+                                </div>
+                                <div class="monster_body_center">
+                                    <div class="monster_body_center_justify">
+                                        <div class="monster_body_center_justify_neck"></div>
+                                    </div>
+                                    <div class="tronco_cima"></div>
+                                    <div class="monster_body_center_justify">
+                                        <div class="monster_body_center_justify_stomach"></div>
+                                    </div>
+                                </div>
+                                <div class="monster_body_right">
+                                    <div class="monster_body_right_shoulder"></div>
+                                    <div class="monster_body_right_arm"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="window_flap" >
+                        </div>
+                    </div>
+                    <img class="eye_of_the_window" src="img/eye.png" alt="" onclick="see_the_animation()"> 
+                </div>
+            </div>
+        </section>
+        <section class="objects__identifier">
+            <div class="objects_title">
+                <h2>Variáveis Compostas</h2>
+            </div>
+            <div class="yellow_border">
+                <div id="objects_text_identifier">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/age_test.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/content_blocked.js"></script>
+    <script src="js/object_apresentation.js"></script>
+    <script src="js/repeater.js"></script>
+    <script src="js/window_animation.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+
+.age_test_result {
+    display: flex;
+    width: 60%;
+    min-width: 200px;
+    justify-content: space-around;
+}
+
+.age_test {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(12, 12, 12);
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0;
+    min-width: 200px;
+}drof
+
+#age_test_input_indentifier {
+    width: 50%;
+    max-width: 100px;
+}
+
+.age_test button {
+    width: 100px;
+}
+
+.age_test_verifier {
+    background-color: rgb(12, 12, 12);
+    border: 1px solid yellow;
+    color: white;
+}
+
+#age_test_input_indentifier {
+    background-color: rgb(12, 12, 12);
+    border: yellow 1px solid;
+    transition: 1s; color: white;
+}
+
+#age_test_input_indentifier:focus-visible {
+    box-shadow: yellow 0 0 10px;
+    border: none;
+    outline: none;
+}
+
+@media(max-width:1260px) {
+  
+}
